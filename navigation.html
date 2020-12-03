@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Navigation bar </title>
+<style>
+body{
+     margin :0;
+     padding: 0;
+     font-family: Arial;
+}
+nav{
+     position:fixed;
+     top:0;
+     left:0;
+     width:100%;
+     height:100px;
+     padding:10px 9px;
+     box-sizing:cover;
+     background:blue;
+}
+nav .logo{
+    padding:22px 20px;
+    height:80px;
+    float:left;
+    font-size:24px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#fff;
+}
+nav ul {
+       list-style:none;
+       float:right;
+       margin:0;
+       padding:0;
+       display:flex;
+}
+nav ul li a{
+        line-height:80px;
+        color:#fff;
+        padding:12px 30px;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-size:15px;
+        font-weight:bold; 
+}
+nav ui li a:hover{
+            background:rgba(0,0,0,7);
+            border-radius:6px;
+}
+nav ul li a.active{
+       background:#e2471f;
+       color:#fff;
+       border-radius:6px;
+}
+section{
+   height:100vh;
+   width:100%;
+   background:url('school.jpg');
+   background-size:cover;
+   background-position:center;
+}
+
+</style>
+</head>
+<body>
+<div class ="wrap">
+    <nav>
+    <div class="logo"> Logo </div>
+         <ul>
+           <li> <a target="bottom" class ="active" href ="home.html"> HOME</a> </li>
+            <li> <a target="bottom" href ="subjects.html"> SUBJECTS</a> </li>
+            <li> <a target="bottom" href ="contact.html"> CONTACT</a> </li>
+            <li> <a target="bottom" href ="about.html"> ABOUT</a> </li>
+             <li> <a target="bottom" href ="feedback.html"> FEEDBACK</a> </li>
+         </ul>
+    </nav>
+    <section></section>
+</div>
+</body>
+</html>
